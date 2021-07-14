@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>success-h</h1>
+<div id="dev01",class="dev_class"  th:id="${k1}"  th:class="${k1}" th:text="${k1}">origin value</div>
+<h4 th:text="${user}" th:each="user:${users}"></h4>
+<h4 th:text="${users}" ></h4>
+
+
+<h4>
+    <span th:each="user:${users}">[[${user}]] &nbsp;</span>
+</h4>
+<input type="checkbox"/>[[${k1}]]
+</body>
+</html>
